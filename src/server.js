@@ -1,6 +1,6 @@
 
 const app = require("./app");
-const { connectToServer } = require("./middleware/dbConnection");
+const { connectToServer } = require("../middleware/dbConnection");
 require("dotenv").config();
 const port = process.env.PORT || 5050;
 

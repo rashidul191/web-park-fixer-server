@@ -4,10 +4,10 @@ const cors = require("cors");
 const app = express();
 
 // router
-const userRouter = require("./src/app/moduler/users/user.router");
-const renterRouter = require("./src/app/moduler/renter/renter.router");
-const parkingRouter = require("./src/app/moduler/parking/parking.router");
-const errorHandler = require("./middleware/errorHandler");
+const userRouter = require("./app/moduler/users/user.router");
+const renterRouter = require("./app/moduler/renter/renter.router");
+const parkingRouter = require("./app/moduler/parking/parking.router");
+const errorHandler = require("../middleware/errorHandler");
 
 // middleware
 app.use(cors());
