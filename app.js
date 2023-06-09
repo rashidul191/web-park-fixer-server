@@ -7,7 +7,7 @@ const app = express();
 const userRouter = require("./src/app/moduler/users/user.router");
 const renterRouter = require("./src/app/moduler/renter/renter.router");
 const parkingRouter = require("./src/app/moduler/parking/parking.router");
-const { default: errorHandler } = require("./middleware/errorHandler");
+const errorHandler = require("./middleware/errorHandler");
 
 // middleware
 app.use(cors());
